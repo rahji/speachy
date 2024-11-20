@@ -7,14 +7,22 @@ that match specific parts of speech.
 
 ## Examples
 
-View a list of all types of adjectives from a text file
+View a list of all types of adjectives from a text file:
 
 ```
 speachy -i inputfile.txt JJ,JJR,JJS
 ```
 
-You can also output the words to a text file. If you leave the list of part of speech tags off of the command, Speachy
-will present an interactive list from which to choose tags.
+Speachy will also take the text from STDIN, if you leave the input filename flag off of the command:
+
+```
+cat intputfile.txt | speachy JJS
+```
+
+You can also output the words to a text file:
+
+*(If you leave the list of part of speech tags off of the command, Speachy
+will present an interactive list from which to choose tags.)*
 
 ```
 speachy -i inputfile.txt -o outputfile.txt
@@ -70,3 +78,7 @@ an interactive list is presented.
   WP$   wh-pronoun, possessive
   WRB   wh-adverb
 ```
+
+## Thanks
+
+All the Natural Language Processing work is done by Go [prose package](https://github.com/jdkato/prose). Thanks, too, to Charm for the [Bubble Tea](https://github.com/charmbracelet/bubbletea) package for making the command-line fun. Also thanks to [Go](https://go.dev/), a fun language to learn and use.
