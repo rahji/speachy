@@ -16,7 +16,13 @@ speachy -i inputfile.txt JJ,JJR,JJS
 Speachy will also take the text from STDIN, if you leave the input filename flag off of the command:
 
 ```
-cat intputfile.txt | speachy JJS
+cat inputfile.txt | speachy JJS
+```
+
+Get a lowercase unique list by piping the output to a few unix commands:
+
+```
+cat inputfile.txt | speachy UH | tr A-Z a-z | sort | uniq
 ```
 
 You can also output the words to a text file:
