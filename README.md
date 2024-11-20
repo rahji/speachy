@@ -28,6 +28,18 @@ will present an interactive list from which to choose tags.)*
 speachy -i inputfile.txt -o outputfile.txt
 ```
 
+## Installation
+
+1. Download the appropriate archive file from the [Releases](releases) page.
+2. Place the `speachy` executable somewhere in your path
+3. Run it from a terminal window as described below. On MacOS, use the Terminal app. On Windows, you might need to [download Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=en-us&gl=us&rtc=1) from Microsoft.
+
+Or, if you have `go` installed:
+
+```bash
+go install github.com/rahji/speachy@latest
+```
+
 ## Usage
 
 ```
